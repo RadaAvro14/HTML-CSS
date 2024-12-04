@@ -7,7 +7,6 @@
     <style>
       body {
         height: 100vh;
-        padding: 0;
         justify-content: center;
         display: flex;
         background-image: url("im.jpg");
@@ -15,7 +14,7 @@
         background-attachment: fixed;
       }
       .page {
-        border: 2px black solid;
+        border: 1px #d0d0d0 solid;
         width: 800px;
         border-radius: 15px;
         background-color: white;
@@ -25,19 +24,71 @@
       }
       .section {
         flex: 1;
-        float: left;
         margin: 3px;
         border-radius: 20px;
         background-color: #e0e0e0;
-        margin-top: 70px;
+        margin-top: 60px;
+        display: flex;
+        justify-items: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px;
+        float: bottom;
       }
+
+      .small-data {
+        width: 230px;
+        height: 150px;
+        border-radius: 15px;
+        background-color: white;
+        flex: 1;
+
+        margin-bottom: 10px;
+      }
+
+      .contact {
+        width: 230px;
+        height: 150px;
+        border-radius: 15px;
+        background-color: white;
+        margin-bottom: 10px;
+      }
+
+      .contact .second {
+        flex: 2;
+      }
+     .little-section{
+       
+        margin: 3px;
+        border-radius: 20px;
+        background-color: #e0e0e0;
+        margin-top: 140px;
+        display: flex;
+        justify-items: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px;
+        float: bottom;
+        flex:1;
+     }
+
     </style>
   </head>
   <body>
     <div class="page">
-      <div class="section"></div>
-      <div class="section"></div>
-      <div class="section"></div>
+      <div class="section" id="first">
+        <section class="contact"></section>
+      </div>
+      <div class="section">
+        <section class="small-data"></section>
+        <section class="contact second"></section>
+        <section class="contact second"></section>
+        <section class="contact second"></section>
+        <section class="small-data"></section>
+      </div>
+       
+      <div  class="little-section">
+        <section class="contact"></section>
     </div>
   </body>
 </html>
