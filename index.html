@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creative CV Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <style>
       body {
+        font-family:'Roboto';
         height: 100vh;
         justify-content: center;
         display: flex;
@@ -27,7 +30,7 @@
         flex: 1;
         margin: 3px;
         border-radius: 20px;
-        background-color: #e0e0e0;
+        background-color: white;
         margin-top: 60px;
         display: flex;
         justify-items: space-between;
@@ -40,10 +43,10 @@
 
       .small-data {
         width: 230px;
-        height: 150px;
+        height: 50px;
         border-radius: 15px;
         background-color: white;
-        flex: 1;
+     
       
         margin-bottom: 10px;
       }
@@ -54,11 +57,11 @@
         border-radius: 15px;
         background-color: white;
         margin-bottom: 10px;
+        padding:0px;
       }
+     
 
-      .contact .second {
-        flex: 2;
-      }
+     
 
        
              
@@ -67,8 +70,8 @@
        
         margin: 3px;
         border-radius: 20px;
-        background-color: #e0e0e0;
-        margin-top: 158px;
+        background-color: white;
+        margin-top: 116px;
         display: flex;
         justify-items: space-between;
         align-items: flex-start;
@@ -80,18 +83,20 @@
      .big-section {
         margin: 0px;
         border-radius: 20px;
-        background-color: #e0e0e0;
+        background-color: white;
         margin-top: 5px;
         display: flex;
         justify-items: space-between;
         align-items: flex-start;
         flex-direction: column;
-        padding-left: 10px;
+        padding-left: 5px;
         float: bottom;
         flex:1;
      }
 
-     ul{
+   
+
+     .menu{
         list-style-type: none;
       margin-left: 45px;
       margin-top:0;
@@ -101,7 +106,94 @@
      }
      li{
         margin-left: 5px;
+        font-family:'Roboto';
+        margin-top:5px;
+
      }
+     
+     a{
+          text-decoration:none;
+          color:black;
+       
+        }
+
+     .name{
+      font-family:'Roboto';
+      font-size:40px;
+      margin-left:10px;
+     }
+     h1{
+      font-weight: lighter;
+      font-family: 'Roboto'; 
+      font-size:12px;
+      margin-left: 10px;
+      text-decoration: underline;
+      white-space:pre;
+     }
+     h2{
+      font-family:"Roboto";
+      font-size:10px;
+      font-weight:lighter;
+      margin-left:10px;
+      margin-bottom:1px;
+     }
+
+     h3{
+      font-weight:bold;
+      font-size:14px;
+      margin:10px;
+      margin-top:0px;
+      margin-bottom:1px;
+     }
+
+     h1 #stud {
+      text-align: start;
+     }
+     
+     p{
+      font-size:12px;
+      margin:10px;
+       
+     }
+
+     .contact-info {
+      
+      list-style-type:none;
+      font-size: 11px;
+      margin-left:5px;
+      padding-left:0px;
+      padding-top:5px;
+     }
+
+     
+     #contact-data {
+      padding:0
+     }
+
+     #skills{
+      display:grid;
+      height:120px;
+      width:210px;
+      grid-template-columns: repeat(2,1fr);
+      padding-left:25px;
+
+     }
+
+    .skill {
+      margin:0px;
+      padding:0px;
+      list-style-type: none;
+      font-size: 10px;
+    }
+
+    #languages {
+      list-style-type: none;
+      font-size: 10px;
+      padding-left:21px;
+      display:grid;
+      gap:10px;
+      white-space:pre;
+    }
 
     </style>
   </head>
@@ -109,24 +201,90 @@
  
     <div class="page">
       <div class="section" id="first">
-        <section class="contact"></section>
+        <section class="contact" id="contact-data">
+          <h1 id="stud">CONTACT                                                01</h1>
+          <ul class="contact-info">
+            <a href="https://github.com/RadaAvro14">
+            <li>GITHUB.COM/RadaAvro14</li>
+            </a>
+            <a href="https://github.com/RadaAvro14">
+              <li>RadaAvro14.com</li>
+              </a>
+              <a href="https://github.com/RadaAvro14">
+                <li>+0744455566</li>
+                </a>
+                <a href="https://github.com/RadaAvro14">
+                  <li>RadaAvro14@gmail.com</li>
+                  </a>
+          </ul>
+        </section>
       </div>
       <div class="big-section">
-        <ul>
-            <li>about me</li>
+        <ul class ="menu">
+           <a href="">
+          <li>about me</li>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
             <li>html</li>
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
             <li>css</li>
+          </a>
             
         </ul>
-        <section class="small-data"></section>
-        <section class="contact second"></section>
-        <section class="contact second"></section>
-        <section class="contact second"></section>
-        <section class="small-data"></section>
+        <section class="small-data">
+          <Text class="name">Rada Buta</Text>
+       
+        </section>
+        <section class="contact second">
+          <h1 id="stud">STUDII                                                   02</h1>
+          <h2>2016.09 - Present</h2>
+          <h3>Facultatea de JavaScript</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cupiditate aliquam debitis commodi! Eaque labore praesentium sapiente quas ex facilis.  </p>
+        </section>
+        <section class="contact second">
+          <h2>2016.09 - Present</h2>
+          <h3>Facultatea de JavaScript</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cupiditate aliquam debitis commodi! Eaque labore praesentium sapiente quas ex facilis.  </p>
+        </section>
+        <section class="contact second">
+          <h2>2016.09 - Present</h2>
+          <h3>Facultatea de JavaScript</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cupiditate aliquam debitis commodi! Eaque labore praesentium sapiente quas ex facilis.  </p>
+        </section>
+        <section class="contact second">
+          <h1>CERTIFICARI                                        03</h1>
+          <h2>2016.09 - Present</h2>
+          <h3>Facultatea de JavaScript</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cupiditate aliquam debitis commodi! Eaque labore praesentium sapiente quas ex facilis.  </p>
+        </section>
       </div>
        
       <div  class="little-section">
-        <section class="contact"></section>
+        <section class="contact"  >
+          <h1 id="stud">SKILLURI                                                04</h1>
+          <ul id="skills">
+          <li class="skill" >Baze de date</li>
+          <li class="skill">Team work</li>  
+          <li class="skill">React</li>
+          <li class="skill">Recursive Fns</li>
+          <li class="skill">CSS</li>
+          <li class="skill">Typescript</li>
+          <li class="skill">Python</li>
+          <li class="skill">HTML5</li>
+          <li class="skill">Flexbox</li>
+          <li class="skill" >CSS Grid</li>
+        </ul>
+        </section>
+        <section class="contact">
+          <h1 id="stud">LANGUAGES                                          05</h1>
+          <ul id="languages">
+            <li>English                                                         C1</li>
+            <li>Italian                                                           B2</li>
+            <li>SQL                                                               C1</li>
+        
+          </ul>
+        </section>
     </div>
   </body>
 </html>
